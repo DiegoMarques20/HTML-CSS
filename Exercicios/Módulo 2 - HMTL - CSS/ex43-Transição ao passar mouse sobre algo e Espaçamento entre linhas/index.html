@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transição ao passar o Mouse e Espaçamento entre linhas</title>
+    <style>
+        main{
+            background-color: black;
+            color: white;
+        }
+        h1{
+            text-align: center;
+        }
+
+        li > a{
+            color: yellow;
+            transition-duration: 0.4s;
+            text-decoration: none;
+        }
+
+        li > a:hover{
+
+            background-color: azure;
+            color: black;
+        }
+        li.espacamento{
+            line-height: 3em;
+        }
+    </style>
+</head>
+<body><main>
+    <h1>Transição ao passar mouse sobre algo e Espaçamento entre linhas</h1>
+    <ul type="square">
+        <li>Para passarmos o mouse sobre um link por exemplo e ele trazer um efeito como o abaixo, usamos o<mark> transition-duration: 0.3s;</mark>. Determinamos os segundos do efeito. </li>
+        <p></p>
+        <li>Para isso além de usar a tag informada acima, depois que passar as cores que desejamos em um :hover.</li>
+        <p></p>
+        <li><a href="https://www.linkedin.com/in/diego-marques-1101b56b/" target="_blank">Clique aqui</a></li>
+        <p></p>
+        <li class="espacamento">Para mudarmos o espaçamento de uma linha de frase para outra, como
+            neste exemplo, utilizamos a tag <mark>line-height:1em;</mark> onde 1em é a quantidade de distanciamento utilizado. Para esse exemplo estamos usando o 3em.
+        </li>
+    </ul>
+</main>
+</body>
+</html>

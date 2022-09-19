@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'George';
+    src: url('Louis\ George\ Cafe.ttf') format('truetype');
+    font-weight: normal;
+    }
+
+    :root{
+        --cor1:#477980;
+        --cor2:#DBFBFF;
+        --cor3:#8FF2FF;
+        --cor4:#6E7D80;
+        --cor5:#73C2CC;
+    }
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body{
+        background-color: cadetblue;
+        
+    }
+    header {
+        background-color: #8FF2FF;
+        text-align: center;
+        min-height: 150px;
+        padding-top: 40px;
+     }
+
+     header > h1{
+        color: #6E7D80;
+        margin-bottom: 20px;
+        font-size: 2.5em;
+        text-shadow: 1px 0px 1px #0000008e;
+     }
+
+     nav.home{
+        padding: 20px;
+        margin: 0px;
+        text-align: justify;
+        padding-top: 35px;
+        padding-left: 0px;
+     }
+
+     nav{
+        padding: 10px;
+        margin: 10px;
+     }
+    nav > a {
+        color: #477980;
+        padding: 1px;
+        margin: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        transition-duration: 0.3s;
+        font-size: 1.1em;
+        
+
+    }
+    nav > a:hover{
+        background-color: #73C2CC;
+        color: #DBFBFF
+
+    }
+
+    header > p {
+        color: #6E7D80;
+        text-shadow: -1px 0px 0px #0000008e;
+        font-size: 1.1em;
+        padding: 10px;
+        margin: 10px;
+        padding-top: 19px;
+
+    }
+    main{
+        background-color:#ffffff;
+        font-family: 'George',cursive;
+        text-align: center;
+        line-height: 2.0em;
+        min-width: 300px;
+        max-width: 1000px;
+        margin: auto;
+        margin-bottom: 30px;
+        border-radius: 0px 0px 10px 10px;
+        padding: 20px;
+    }
+
+    main img{
+
+        width: 100%;
+    }
+
+    article > h1{
+        color: #6E7D80;
+        margin: 20px -20px;
+        font-size: 2.0em;
+        background-color: #8FF2FF;
+        padding: 10px;
+
+    }
+
+    article > p{
+        margin: 8px 0px;
+        font-size: 1.2em;
+    }
+
+    p > strong {
+        color: #477980;
+        font-weight: bold;
+        text-decoration: underline;
+
+
+    }
+
+    aside{
+        background-color:#8FF2FF;
+        padding: 9px;
+        margin: 15px;
+        border-radius: 0px 0px 10px 10px;
+        box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.525);
+    }
+
+    aside > ul{
+
+        columns: 4;
+        list-style-position: inside;
+    }
+
+    aside > h3{
+
+        background-color: #73C2CC;
+        padding: 4px;
+        margin: -9px;
+    }
+
+    aside > p{
+        margin: 10px;
+        padding: 10px;
+        font-weight: bold;
+    }
+
+
+    footer{
+        text-align: center;
+        background-color: #8FF2FF;
+        color: black;
+        padding: 5px;
+        margin: auto;
+        font-size: 1.0em;
+    }
+
+    footer > a {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+
+    footer a:hover{
+        text-decoration: underline;
+        color: #477980;
+    }
+
+    div.videoexterno{
+
+        background-color: #8FF2FF;
+        margin: 0px -20px 30px -20px;
+        padding: 20px;
+        position: relative;
+        padding-bottom: 59%;
+    }
+
+    div.videoexterno > iframe {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+    }

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        a{
+
+            color: rgb(123, 5, 5);
+            text-decoration: none;
+        }
+
+        a:visited{
+            color: blueviolet;
+        }
+
+        a:hover{
+
+            text-decoration: underline;
+        }
+        a::before{
+            content: '⇒	' ;
+        }
+        a::after{
+            content: '   ⇐	';
+            color: darkblue;
+            font-weight: normal;
+            text-decoration: none;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/diego-marques-1101b56b/" target="_blank">Linkedin</a></li>
+        <li><a href="https://www.instagram.com/diego.marques20/" target="_blank" >Instagram</a></li>
+        <li><a href="https://github.com/DiegoMarques20" target="_blank" >Github</a></li>
+    </ul>
+    <ul>
+        <li>Identificamos pseudo class, pois essas precisam de obter : como exemplo <b>a:hover</b> e pseudo elementos possuem :: como <b>a::after</b>
+        <p></p> </li>
+        <li>Para retirarmos o sublinhado dos link, dentro de style usamos a tag <b>text-decoration: none; </b></li>
+        <p></p>
+        <li>Para alterarmos a cor de um link que o usúario já acessou, igual acontece que utilizamos buscas no google, usamos a pseudo class <b>a:visited</b> e inserimos a cor desejada, conforme nesse exemplo:<mark>
+            a:visited{
+                color: blueviolet;}
+        </mark>
+        <p></p>
+         </li>
+        <li>Para o usuário passar o mouse em cima de uma informação e ficar sublinhado, utilizamos a pseudo class <b>a:hover</b> da seguinte maneira:<mark>
+            a:hover{
+             text-decoration: underline;
+            }
+        </mark></li>
+        <p></p>
+        <li>Para indicarmos um link a frente de uma palavra/link usamos o pseudo elemento <b>::after</b>, como neste exemplo:       <b>
+              a::after{
+                content: ' [Link]';
+        </b> </li>
+        <p></p>
+        <li>Para inserirmos símbolos antes ou depois, buscamos no google símbolos HTML 5 cópiamos o código do símbolo ou a propria imagem e colamos conforme utilizamos os pseudos elementos abaixo:</li>
+        <p> Antes do link:        <b>
+            a::before{
+                content: '⇒	' ;
+        </b></p>
+        <p>Depois do link:       <b>
+             a::after{
+                content: '   ⇐	';
+        </b></p>
+        <p></p>
+        <li><b>No HTMl para CSS as simbologias funcionam da seguinte forma</b></li>
+        <p> # = id</p>
+        <p> . = class</p>
+        <p>: = pseudo-class</p>
+        <p>:: = pseudo-element</p>
+        <p>> = clildren(Filho)</p>
+
+    </ul>
+    
+</body>
+</html>

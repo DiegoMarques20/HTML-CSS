@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.divisoes{
+
+    background-color: black;
+    color: white;
+}
+.primeiradivisao{
+
+    background-color: rgba(183, 220, 177, 0.81);
+    color: black;
+}
+.segundadivisao{
+
+    background-color: rgba(219, 234, 14, 0.859);
+    color: brown;
+}
+.terceiradivisao{
+
+    background-color: blueviolet;
+    color: bisque;
+}

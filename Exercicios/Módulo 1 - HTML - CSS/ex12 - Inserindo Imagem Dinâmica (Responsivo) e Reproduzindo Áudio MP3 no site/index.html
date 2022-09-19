@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <hr>
+    <p>Para trabalharmos com imagens com tamanhos diferentes, pois o usuário pode abrir o site em plataformas distintas, utilizamos a tag <b>Picture</b> e dentro dela utilizamos o <mark>source media</mark>. Devemos seguir na sequencia de tamanhos do maior para o menor, G>M>P>PP e assim sucessivamente. Devemos informar também em número de pixels para o site mudar o tamanho automaticamente, segue um exemplo abaixo: <mark>
+        Dentro de Picture: (
+            source media="(max-width: 500px)" srcset="imagens/foto-.png" type ="image/png">
+            source media="(max-width: 750px)" srcset="imagens/foto-m.png" type="image/png">
+            img src="imagens/foto-g.png" alt="imagem flexível">
+    </mark> </p>
+
+
+    <picture>
+        <source media="(max-width: 500px)" srcset="imagens/foto-.png" type ="image/png">
+        <source media="(max-width: 750px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a repdoruzir áudios em HTML5.</p>
+    <audio src="midia/musica1.mp3" controls autoplay><</audio>
+    <audio>
+        <source src="midia/musica2.mp3" type="audio/mpeg">
+        <source src="midia/musica1.ogg" type="audio/ogg">
+        <source src="midia/musica2.wav" type="audio/wav">
+        <p>Infelizmente o seu navegador não consegue reproduzir áudio.<a href="midia/musica1.mp3"> Clique aqui para baixar o áudio em MP3.</a> </p>
+    </audio>
+    <p>Para inserirmos um áudio MP3 em um site, utilizamos a tag <b>Audio SRC</b> e dentro das aspas chamamos o link, outro item importante é <mark>depois das as aspas inserir o controls autoplay</mark>, isso faz com que o usuário controle se quer pausar ou continuar o áudio.</p>
+
+    <p>Outra informações importante é que dependendo do navegador do usuário, o arquivo MP3 pode não rodar, neste caso podemos ter o arquivo nos formatos mais usados como o MP3,OGG, WAV, o WAV costuma ser muito pesado e dificultar o carregamento do site, então não recomendamos utilizar. Para termos mais de uma oção de áudio, fazemos parecido com o processo de imagens em formatos diferente, porém utilizamos a tag <b>Audio</b> e dentro inserimos um <b>Source</b> como no exemplo abaixo, ai neste caso se o navegor não suportar MP3 ele vai reproduzir em OGG. Lembrando que ele vai priorizar a sequencia informada no código.</p>
+    <img src="imagens/Fotoexemplo.PNG" alt="fotoexemplocodigo">
+</body>
+</html>

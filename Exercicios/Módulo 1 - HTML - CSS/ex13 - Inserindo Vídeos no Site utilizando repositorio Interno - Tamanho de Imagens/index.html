@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em sites</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados internamente</h1>
+    <p>Este vídeo está hospedado no meu própio servidor.</p>
+    <video controls width = "400" poster="imagens/capa.png">
+        <source src="videos/videomp4.m4v" type="video/mp4">
+        <source src="videos/videowebm.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com a reprodução de vídeos.</p>
+    </video>
+    <p>Para incluirmos um vídeo do própio servidor devemos usar a Tag <b>Video</b>, porém dentro dela devemos abrir como Video controls Width='500' poster='imagem/capa.png' 
+        <ul type="square">
+            <li>Video Controls: Permite aparecer o controle de play e pausa no vídeo</li>
+            <li>Width: Permite você aumentar ou diminuir o tamanho do vídeo no site</li>
+            <li>Poster: Permite você colocar uma capa inicial no seu vídeo</li>
+        </ul>
+        <p>Além dessas informações, assim como imagens e audios, os <b>Vídeos</b> podem ter incopatibilidade de acordo com o navegador que o usuário utilizada, com isso devemos subir vídeos em 3 formatos que são os mais utilizados e obedecendo a ordem MP4,WEBM e OGV. Lembrando que para mencionar os formatos no <b>Type</b> o <mark>OGV é informado como OGG</mark>.</p>
+        <p>Utilizamos o <mark>souce src</mark> para colocar as informações dos vídeos em formatos diferentes e se o navegador não ler um ele tenta a leitura do próximo e assim sucessivamente</p>
+    </p>
+</body>
+</html>

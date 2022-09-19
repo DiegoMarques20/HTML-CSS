@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://github.com/DiegoMarques20" target="_blank" rel="external">repositório público no GitHub</a></p>
+    <P>Você também pode acessar o meu Linkedin clicando <a href="https://www.linkedin.com/in/diego-marques-1101b56b/">aqui</a></P>
+    <p>Para inserirmos um link externo para que o usuário clique usamos a Tag A e entre as Aspas "" inserimos o endereço externo. <b>Ponto Importante:</b> Para o usuário clicar e não sobrepor em nosso site, temos que add as seguintes informações depois do link do Endereço <b>target="_blank" rel="external"></b>, <mark>pois só assim o link será aberto em uma nova guia.</mark> </p>
+    <p>Quando inserimos um link externo e que o site é desconhecido ou não sabemos a procedência, devemos inserir depois do link um código que visualmente não vai alterar nada no site, porém internamente impacta nos mecanismos de buscas e informamos que não temos ciencia da procedência daquele site,target="_blank" rel="nofollow"> </p>
+    <h2>Links Internos</h2>
+    <p>Está é a primeira págian do site, se quiser pode acessar a <a href="pag002.html"rel="next">Segunda página</a></p>
+    <p>Para inserir um link interno dentro do nosso proprio site, devemos utilizar o mesmo comando do externo usando a tag A, porém entre as "aspas" apertamos CTRL + Espaço e escolhemos o nome da pagina desejada. Lembrando que para isso já terimos que ter criado uma extensão de uma segunda página, por exemplo pag002.html </p>
+    <img src="Capturar.PNG" alt="Imagem do exemplo acima">   
+    <h2>Terceira Página</h2>
+    <p>Para acessar a terceira página, clique <a href="noticias/pag003.html"rel="next">aqui</a></p>
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="Livro/10.pdf" download="10.pdf" type="application/pdf">Baixar livro modulo 10 em pdf</a></li>
+        <li><a href="Livro/11.pdf" download="11.pdf" type="application/pdf">Baixar livro modulo 11 em pdf</a></li>
+    </ul>
+    <p>Para disponibiliar arquivos para Download, usamos a TAG A e dentro das "aspas" inserimos o caminho de onde está o arquivo, depois disso adicionar dowload="" (Escrever o nome do arquivo nas aspas e . o formato, se for pdf dowload.pdf e o type = "application/pdf"</p>
+</body>
+</html>

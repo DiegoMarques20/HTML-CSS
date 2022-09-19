@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 100px;
+            width: 150px;
+        }
+        div:hover{
+            background-color: yellow;
+        }
+        div > p {
+            display: none;
+        }
+        div:hover > p {
+            display: block;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Classes</h1>
+    <p>Neste exemplo vamos criar algumas Divs e dentro dela vamos fazer algumas ações, como se o usuário passar o mouse alguma ação vai acontecer. para representar as Pseudo classes, utilizamos os dois pontos : , por exemplo a pseudo class da div:houver é uma configuração de estado, então se usamos  <mark>div:hover {background-color: yellow;}</mark> quando o usuário passar o mouse em alguma div o mesmo vai ficar amarelo. </p>
+    <h2>Altura, largura, Elementros um do lado do outro e Borda</h2>
+    <p>Para alterarmos a altura utilizamos a tag <b>height: 200px;</b> e para largura utilizamos <b>width: 200;</b>.E para deixarmos elementos um do lado do outro é display: inline-block; .Para inserirmos borda utilizamos <b>border: 1px solid black;</b> </p>
+
+    <div>01</div>
+    <div>02</div>
+    <div>03</div>
+    <p></p>
+    <h2>Nome Oculto Utilizando Hover</h2>
+    <p>Se utilizamos <b>div > p {display: none;}</b> Todo p que tiver dentro da div vai ficar oculto</p>
+    <p>Com base na informação acima se logo após utilizarmos o <b>
+        div:hover > p {
+            display: block;
+    </b> Informar que se passar o mouse em uma Div que tem o p dentro ele vai mostrar e desbloquear a informação.
+        color: blueviolet;</p>
+    <p>Passe o Mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO....</p>
+
+    </div>
+    <p>Fim do Exemplo</p>
+
+
+</body>
+</html>

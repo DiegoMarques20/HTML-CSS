@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        * {   
+            height: 
+        }
+        body {
+            background-image: linear-gradient(to left ,#136155,#9DFAEC,#2DE0C5,#23AD99);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fazendo um Degradê de cores CSS</h1>
+    <ul style="square">
+        <li>Para usarmos cores e fazermos um degradê, utilizamos a tag <b>STYLE</b> na parte de cima do código abaixo de title e dentro da tag Style digitamos body e entre parenteser, usamos o <mark>background-image: linear-gradient</mark> depois isso selecionamos o formato do degradê, da esquerda para direita colocamos <b>to right</b> da direita para esquerda <b>to left</b> para cima <b>to top</b> e para baixo <b>to bottom</b></li>
+        <p></p>
+        <li> Outro ponto importante, podemos apenas inserir o código da cor que queremos e quantas cores quizermos inserir dentro do background-image: linear-gradient para ir alternando o degradê, como no exemplo abaixo</li>
+        <p></p>
+        <img src="degrade.PNG" Width="600" alt="exemploemcodigodegrade">
+        <p></p>
+        <li>Quando usamos o to top, o site fica com uma configuração visualmente ruim, para isso usamos uma configuraçao global do CSS (height:100%) e inserimos na parte de cima, conforme print abaixo. Não podemos esquecer do * para iniciar. Além disso inserimos a tag <b>background-attachment: fixed </b> para o site não ficar em degradê em várias partes, ele unifica o degradê</li>
+        <p></p>
+        <img src="configuracaoglobalcss.PNG" Width="600" alt="imagemconfiguracaoglobalcss>"
+
+    </ul>
+
+</body>
+</html>

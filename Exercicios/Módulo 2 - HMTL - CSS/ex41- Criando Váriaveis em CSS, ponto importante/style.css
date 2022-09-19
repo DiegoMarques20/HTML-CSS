@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+:root{
+
+    --corfundo: #000000;
+    --corletras:#ffffff;
+
+}
+
+body{
+
+    background-color:#000000;
+    color: #ffffff;
+    text-align: center;
+
+}
+

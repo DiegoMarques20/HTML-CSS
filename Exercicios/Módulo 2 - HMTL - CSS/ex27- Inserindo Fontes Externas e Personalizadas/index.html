@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Betty';
+            src: url(Betty\ Regular.ttf); format('truetype');
+        }
+        body{ font-family: Betty;
+            font-size: 20px;
+
+
+        }
+        h1{
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Fontes Externas</h1>
+    <ul style="square">
+        <li>As vezes o cliente pode pedir uma fonte que não tenha no Google Fonts ou seja bem específica, neste caso pode ser que ele te direcione a acessar o site <a href="https://www.dafont.com/pt/" target="_blank" >DaFonte</a> ao selecionarmos a fonte, devemos verificar se as mesmas possuem acentos e letras minusculas, pois algmas não possuem essas caracteristicas</li>
+        <p></p>
+        <li>Baixamos o arquivo da fonte e inserimos dentro da nossa pasta index, e após o style já inserimos o <b>@font-face</b> Dentro da URl copiamos examente o nome no arquivo e abrimos um format para indicar o formato.Se for <b>OTF colocamos opentype</b> Se for <b>TTF colocamos truetype</b> Se for <b>Apple Advanced Typography colocamos truetype-aat</b> </li>
+        <p></p>
+        <li>Cada navegador lê um tipo diferente, então se inserirmos uma fonta externa e ela tiver opções de otf e ttf, imortante colocarmos os dois configurados na pasta e no código.</li>
+        <p></p>
+        <img src="exemplocodigo.PNG" alt="exemplodocodigo">
+
+
+    </ul>
+   
+    
+</body>
+</html>

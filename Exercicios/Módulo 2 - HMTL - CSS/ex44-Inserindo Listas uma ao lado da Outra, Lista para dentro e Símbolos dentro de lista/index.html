@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserir Listas uma do lado da Outras</title>
+    <style>
+        main{
+            background-color: blueviolet;
+            color: white
+        }
+
+        ul {
+            columns: 2;
+            list-style-type: '\1F4CD';
+        }
+            p.ppp{
+                text-indent: 15px;
+                font-size: 18px;
+                padding:10px ;
+            }
+            main > h1{
+                text-align: center;
+            }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Inserindo Listas uma ao lado da Outra e Lista para dentro</h1>
+        <ul>
+            <li>Para inserimos uma lista ao lado da outra, conforme o exemplo, usamos a tag <strong>columns: 2</strong>. Onde 2 é o número de vezes que queremos que a lista seja dividida.</li>
+            <p></p>
+            <li>Para deixarmos a lista para dentro do bloco, usamos a tag <strong>list-style-position: inside</strong>. </li>
+            </ul>
+            <p class="ppp">Para usarmos símbolos ou emoji dentro de uma lista, usamos a tag <strong>list-style-type: '\1F4CD';</strong>. E inserirmos uma contra barra e depois o códgo do símbolo selecionado.</p>
+    </main>
+    
+</body>
+</html>
