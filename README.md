@@ -4,5 +4,7 @@
  <strong>Projetos Realizados: </strong>
 
 <ol>
-<li><a href="https://diegomarques20.github.io/HTML-CSS/Exercicios/Projetos%20Feitos/"> Abrir o Projeto Curiosidades de Belo Horizonte</a></li>
+<li><a href="https://diegomarques20.github.io/HTML-CSS/Exercicios/Projetos%20Feitos/">  Curiosidades de Belo Horizonte</a></li>
+<li><a href="https://diegomarques20.github.io/HTML-CSS/Exercicios/Projetos%20Feitos/">  Curiosidades de Belo Horizonte</a></li>
+
 </ol>
