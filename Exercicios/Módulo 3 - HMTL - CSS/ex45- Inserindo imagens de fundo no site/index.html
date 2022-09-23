@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Imagem de Fundo</title>
+    <style>
+
+        body {
+            background-image: url(imagens/wallpaper001.jpg);
+        }
+        h1{
+            background-color: white;
+        }
+        ul{
+            background-color: white;
+        }
+        div.quadrado{
+
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+            border-radius: 10px;
+            background-color: lightgrey;
+        }
+
+        div#q1{
+            background-color: skyblue;
+
+        }
+
+        div#q2{
+            background-image: linear-gradient(to bottom, yellow,red);
+            
+        }
+
+        div#q3{
+
+            background-image: url(imagens/pattern003.png);
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Inserindo Imagens no Fundo</h1>
+    <ul>
+        <li>Para inserimos imagens no fundo, podemos criar uma DIV e dentro dela fazer bordas específicas e usar a tag  <strong>background-color:</strong> para selecionar uma cor de fundo.</li> 
+        <p></p>
+        <li>A tag  <strong>background-image: linear-gradient(to bottom, yellow,red);</strong> para selecionar cores de forma degradê do fundo </li>
+        <p></p>
+        <li>Ou podemos usar a tag <strong>background-image: url(imagens/pattern003.png);</strong> neste caso pegamos uma imagem externa inserimos na pasta e dentro de url colocamos o nome do arquivo desejado, conforme neste fundo de exemplo.  </li>
+
+
+    </ul>
+    <div class="quadrado" id="q1">
+
+    </div>
+
+    <div class="quadrado" id="q2">
+
+    </div>
+
+    <div class="quadrado" id="q3">
+
+    </div>
+    
+</body>
+</html>
