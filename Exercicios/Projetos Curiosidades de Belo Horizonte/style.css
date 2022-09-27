@@ -125,9 +125,9 @@
 
     aside > ul{
 
-        columns: 4;
+        columns: 3;
         list-style-position: inside;
-        display: inline-block;
+        
     }
 
     aside > h3{
