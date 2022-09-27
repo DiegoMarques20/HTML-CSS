@@ -127,6 +127,7 @@
 
         columns: 4;
         list-style-position: inside;
+        display: inline-block;
     }
 
     aside > h3{
