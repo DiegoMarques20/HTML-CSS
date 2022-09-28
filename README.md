@@ -5,6 +5,7 @@
 
 <ol>
 <li><a href="https://diegomarques20.github.io/HTML-CSS/Exercicios/Projetos%20Feitos/">  Curiosidades de Belo Horizonte</a></li>
-<li><a href="https://diegomarques20.github.io/HTML-CSS/Exercicios/Projetos%20Feitos/">  Curiosidades de Belo Horizonte</a></li>
+<li><a href="https://diegomarques20.github.io/projeto-site-android/"> Projeto Android</a></li>
+<li><a href="https://diegomarques20.github.io/Projeto-Cordel/">  Projeto Cordel</a></li>
 
 </ol>
