@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito Zebrado</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px;
+
+        }
+
+        thead, tfoot {
+
+            background-color: gray;
+            color: white;
+        }
+
+        caption {
+            background-color:darkgrey ;
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            color: white;
+            margin: 2px;
+        }
+
+        tbody > tr:nth-child(2n) {
+
+            background-color: darkgrey;
+        }
+
+        thead > tr > th {
+
+            position: sticky;
+            top: -1px;
+            background-color:gray;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Deixar o Cabeçalho de uma tabela Fixo, efeito congelar painéis no Excel</h1>
+
+    <ul>
+        <li>Para fixarmos o cabeçalho de uma tabela, como neste exemplo utilizamos as sequência de acordo com hierarquia de tabelas <strog>(thead > tr > th)</strog> e usamos a tag <mark>position: sticky;</mark> junto com <mark>top: -1px;</mark> e depois inserimos a mesma cor do cabeçalho usando um <mark>background-color:gray;</mark>, conforme usamos neste exemplo.
+            <p></p>
+             <br>thead > tr > th {</br>
+            <br>position: sticky;</br>
+            <br>top: -1px;</br>
+            <br>background-color:gray;</br>
+        } </li>
+    </ul>
+
+    <table>
+        <thead>
+            <th scope="col" style="width:200px">Estado</th>
+            <th scope="col" style="width: 100px">População</th>
+
+
+        </thead>
+        <caption style="width:495px">População dos Estados</caption>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46.649.132</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.411.923</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.463.349</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.985.284</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.597.484</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.466.630</td>
+            </tr>
+            <tr>
+                <td>Pernanbuco</td>
+                <td class="num">9.674.793</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.240.580</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.777.124</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.338.473</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>100.509.688</strong></td>
+            </tr>
+
+        </tfoot>
+    </table>
+    
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ad quam numquam dolor, quod doloribus eveniet, officia saepe autem iure sunt accusantium suscipit a fuga quae consequatur optio omnis sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, debitis, tempore magni, dicta facere harum id amet possimus commodi cupiditate suscipit alias? Natus architecto dolores iure id quas aperiam error!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ad quam numquam dolor, quod doloribus eveniet, officia saepe autem iure sunt accusantium suscipit a fuga quae consequatur optio omnis sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, debitis, tempore magni, dicta facere harum id amet possimus commodi cupiditate suscipit alias? Natus architecto dolores iure id quas aperiam error!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ad quam numquam dolor, quod doloribus eveniet, officia saepe autem iure sunt accusantium suscipit a fuga quae consequatur optio omnis sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, debitis, tempore magni, dicta facere harum id amet possimus commodi cupiditate suscipit alias? Natus architecto dolores iure id quas aperiam error!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ad quam numquam dolor, quod doloribus eveniet, officia saepe autem iure sunt accusantium suscipit a fuga quae consequatur optio omnis sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, debitis, tempore magni, dicta facere harum id amet possimus commodi cupiditate suscipit alias? Natus architecto dolores iure id quas aperiam error!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ad quam numquam dolor, quod doloribus eveniet, officia saepe autem iure sunt accusantium suscipit a fuga quae consequatur optio omnis sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, debitis, tempore magni, dicta facere harum id amet possimus commodi cupiditate suscipit alias? Natus architecto dolores iure id quas aperiam error!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ad quam numquam dolor, quod doloribus eveniet, officia saepe autem iure sunt accusantium suscipit a fuga quae consequatur optio omnis sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, debitis, tempore magni, dicta facere harum id amet possimus commodi cupiditate suscipit alias? Natus architecto dolores iure id quas aperiam error!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ad quam numquam dolor, quod doloribus eveniet, officia saepe autem iure sunt accusantium suscipit a fuga quae consequatur optio omnis sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, debitis, tempore magni, dicta facere harum id amet possimus commodi cupiditate suscipit alias? Natus architecto dolores iure id quas aperiam error!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ad quam numquam dolor, quod doloribus eveniet, officia saepe autem iure sunt accusantium suscipit a fuga quae consequatur optio omnis sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, debitis, tempore magni, dicta facere harum id amet possimus commodi cupiditate suscipit alias? Natus architecto dolores iure id quas aperiam error!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ad quam numquam dolor, quod doloribus eveniet, officia saepe autem iure sunt accusantium suscipit a fuga quae consequatur optio omnis sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, debitis, tempore magni, dicta facere harum id amet possimus commodi cupiditate suscipit alias? Natus architecto dolores iure id quas aperiam error!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ad quam numquam dolor, quod doloribus eveniet, officia saepe autem iure sunt accusantium suscipit a fuga quae consequatur optio omnis sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, debitis, tempore magni, dicta facere harum id amet possimus commodi cupiditate suscipit alias? Natus architecto dolores iure id quas aperiam error!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ad quam numquam dolor, quod doloribus eveniet, officia saepe autem iure sunt accusantium suscipit a fuga quae consequatur optio omnis sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, debitis, tempore magni, dicta facere harum id amet possimus commodi cupiditate suscipit alias? Natus architecto dolores iure id quas aperiam error!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ad quam numquam dolor, quod doloribus eveniet, officia saepe autem iure sunt accusantium suscipit a fuga quae consequatur optio omnis sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, debitis, tempore magni, dicta facere harum id amet possimus commodi cupiditate suscipit alias? Natus architecto dolores iure id quas aperiam error!</p>
+</body>
+</html>
