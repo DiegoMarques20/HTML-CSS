@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Tabelas</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        body {
+
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        table {
+
+            border: 3px solid black;
+            width: 300px;
+            border-collapse: separate;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+
+        tr.colorido {
+
+            background-color: cadetblue;
+           
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Minha Primeira Tabela</h1>
+
+    <p>Hierarquia de Tabela (Simples)</p>
+    <p><mark>Imortante reseitar a hierarquia, pois se não os dados não ficam organizados</mark></p>
+    <p></p>
+    <p> Table = Tabela</p>
+    <p> Table ROW Tag (tr) = Linha de Tabela</p>
+    <p> Table HEADER (th) = Cabeçalho de tabela</p>
+    <p> Table DATA (td) = dado de tabela</p>
+
+    <p>Podemos alinhar as informações dentro das tabelas utilizando o <mark>text-align:</mark> ou  <mark>vertical-align:</mark> </p>
+
+    <table>
+        <tr class="colorido">
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr class="colorido">
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+
+
+    </table>
+    
+</body>
+</html>
