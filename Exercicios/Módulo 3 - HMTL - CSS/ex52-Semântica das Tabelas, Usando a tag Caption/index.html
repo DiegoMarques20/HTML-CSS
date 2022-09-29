@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes </title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px;
+
+        }
+
+        thead, tfoot {
+
+            background-color: gray;
+            color: white;
+        }
+
+        caption {
+            background-color:darkgrey ;
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            color: white;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Utilizando Tabelas Grandes</h1>
+
+    <p>Anatomia para tabelas grandes</p>
+    <p>1 - TABLE</p>
+    <p>THEAD (Cabeça)</p>
+    <p>TBODY (Corpo)</p>
+    <p>TFOOT (Rodapé)</p>
+    <p></p>
+    <p>Usamos a tag <mark>caption</mark> como se fosse um título da tabela, conforme no exemplo abaixo.</p>
+
+    <ul>
+        <li>Importante usarmos a semântica e declarar as informações na tabela para os mecanismos de buscas do Google conseguirem identifcar nosso site.</li>
+        <p></p>
+        <li>Quando usamos um TH e esse TH for uma coluna inserimos a seguinte informação dentro da tag th <mark>scope="col"</mark>.</li>
+        <p></p>
+        <li>Se usarmos aguma númeração como utilizamos em populacão, dentro do td, colocamos class="num" dentro da tag.</li>
+        <p></p>
+        <li>Para modificarmos a largura ou altura de uma coluna, dentro do th informamos a quantidade de pixels desta forma <mark>style="width:200px" ou </mark> <mark>style="height: 200px"</mark>.</li>
+    </ul>
+
+    <table>
+        <thead>
+            <th scope="col" style="width:200px">Estado</th>
+            <th scope="col" style="width: 100px">População</th>
+
+
+        </thead>
+        <caption style="width:495px">População dos Estados</caption>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46.649.132</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.411.923</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.463.349</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>85.524.404</strong></td>
+            </tr>
+
+        </tfoot>
+    </table>
+    
+</body>
+</html>
