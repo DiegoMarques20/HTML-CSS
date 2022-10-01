@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montando Tabelas</title>
+    <style>
+        table {
+            border: 1px solid black;
+            width: 500px;
+            height: 300px;
+            text-align: center;
+            padding: 10px;
+            margin: 10px ;
+        }
+
+        tr, td, th {
+
+            border: 1px solid black;
+        }
+
+        th.cabecalho {
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        td.genero {
+            font-weight: bold;
+        }
+        caption {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício Tabelas</h1>
+
+    <p>Para Cabecalhos com mais de uma coluna declaramos o <mark>scope="colgroup"</mark>, pois informa que tem mais informações e não apenas uma coluna</p>
+
+    <p>E para o exemplo de Mulheres e Homens, declaramos o <mark>scope="rowgroup"</mark> , que é o mesmo caso acima, pois existem mais de uma linha que representa os dados.</p>
+
+    <table>
+        <caption>
+            Filmes Favoritos
+        </caption>
+        <tr>
+            <th scope="col"  class="cabecalho">Grupo</th>
+            <th scope="col" class="cabecalho">Nomes</th>
+            <th scope="colgroup" colspan="3"class="cabecalho" >Filmes</th>
+        </tr>
+        <tr>
+            <td scope="rowgroup" rowspan="3" class="genero" >Mulheres</td>
+            <td>Ana Maria Santos</td>
+            <td>Alien</td>
+            <td>Rambo</td>
+            <td>Vimgadores</td>
+            
+
+        </tr>
+        <tr>
+            <td>Beatriz Souza</td>
+            <td>Hulk</td>
+            <td>Inception</td>
+            <td>Batman</td>
+            
+        </tr>
+        <tr>
+            <td>Cláudia Melo</td>
+            <td>Oblivion</td>
+            <td>Matrix</td>
+            <td>Big Hero</td>
+            
+        </tr>
+
+        <tr>
+            <td  scope="rowgroup" rowspan="3" class="genero">Homens</td>
+            <td>Bruno Mendonça</td>
+            <td>Intocáveis</td>
+            <td>Amnésia</td>
+            <td>Gladiador</td>
+            
+        </tr>
+        <tr>
+            <td>Daniel loureço</td>
+            <td>Wall-E</td>
+            <td>Oldboy</td>
+            <td>Dangal</td> 
+        </tr>
+        <tr>
+            <td>Fabiano Mota</td>
+            <td>Star Wars 5</td>
+            <td>Taxi Driver</td>
+            <td>Toy Story</td>
+            
+            
+
+
+        </tr>
+        
+    </table>
+    
+</body>
+</html>
