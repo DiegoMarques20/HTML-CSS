@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        table {
+            padding: 10px;
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 400px;
+
+        }
+
+        th, td {
+            border: 2px solid black;
+            text-align: center;
+
+        }
+
+        caption {
+            font-size: 1.4em;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        td.cabecalho {
+            font-weight: bold;
+        }
+
+        col.cprof {
+
+            background-color: rgba(81, 203, 207, 0.712);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicios de Tabela</h1>
+
+    <ul type="square">
+
+        <li>Para selecionarmos uma coluna interna e aplicar uma configuração específica, usamos a tag <mark>Colgroup</mark> e dentro da tag inserimos <mark>col class</mark> e damos um nome para as classes, como no exemplo abaixo e definimos as configurações necessárias dentro de estilo. </li>
+        <p></p>
+        <li>Para não precisarmos criar uma class para cada coluna, podemos também criar uma class e inserir <mark> col class="cnome" span="3" </mark>, neste caso ele pega 3 coluna e configura todos elementos da mesma forma.</li>
+    </ul>
+
+    <img src="Imagens/exemplo.PNG" width="400" alt="Exemplo código utiliznado Colgroup">
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="ccidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <td scope="col" class="cabecalho" >Nome</td>
+            <td scope="col" class="cabecalho">Sexo</td>
+            <td scope="col" class="cabecalho">Idade</td>
+            <td scope="col" class="cabecalho">Profissão</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td class="num">25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Claudio</td>
+            <td>M</td>
+            <td class="num">28</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td class="num">42</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Diego</td>
+            <td>M</td>
+            <td class="num">31</td>
+            <td>Desenvolvedor</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
