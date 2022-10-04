@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança nos Iframes</title>
+</head>
+<body>
+    <h1>Segurança nos Iframes</h1>
+
+    <ul>
+        <li>Para bloquearmos ações de login ou informações de dados dentro do nosso Iframe, dentro da tag Iframe inserimos o valor  <mark>sandbox="sandbox"</mark> e <mark>referrerpolicy="no-referrer"</mark>. Neste caso é travada as ações dentro do iframe, como login, extração de dados e etc.</li>
+        <p></p>
+        <li>Agora para não limitarmos tanto o usuário , podemos liberar ações dentro da mesma origem no mesmo servidor , informamos dentro da tag iframe  <mark>sandbox="allow-same-origin"</mark> (Permitir conteúdo dentro da mesma origem).</li>
+        <p></p>
+        <li>Podemos liberar outras ações também, como preenchimento de formulários e scrips, usamos <mark>sandbox="allow-same-origin allow-forms allow-scripts"</mark>.</li>
+
+    </ul>
+
+    <h2>Cadastre-se Aqui</h2>
+    <form action="cadastro.php" method="get"></form>
+
+    <p>
+        Nome:
+        <input type="text" name="nome" id="nome">
+        <input type="submit" value="Cadastrar">
+    </p>
+
+
+    
+</body>
+</html>

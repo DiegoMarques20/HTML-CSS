@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        } 
+
+        iframe#tela { 
+
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Faça uma Escolha</h1>
+
+    <ul>
+        <li>Para utilizamos dentro de uma própria página selecionar o que queremos que aparece no iframe, conforme no exemplo abaixo, inerimos os links disponíveis como de costume na tag A , e dentro do iframe inserimos o <marl>name="Teste"</marl> e usamos dentra da tag A o <mark>target="Teste"</mark>. Neste caso a página será mostrada dentro do iframe. </li>
+        <p></p>
+        <li>Outra opção para não deixarmos o iframe em branco, podemos dentro da tag iframe, informar o <mark>srcdoc"h1 Escolha uma das opções acima /h1"</mark> e passar um texto dentro dele, utilizando um h1 por exemplo.</li>
+        <p></p>
+        <li>Para não deixarmos o iframe em branco, caso o usuário não clique em nada, dentro da tag Iframe informamos o caminho de alguma página no <mark>src""</mark> para ele já abrir mostrando aquela página específica.  <mark>id="tela" name="iframe" src="paginas-extras/pag01.html" frameborder="1"></mark></li>
+    </ul>
+
+    <ul>
+        <li><a href="paginas-extras/pag01.html" target="iframe">Primeira Página</a></li>
+        <li><a href="paginas-extras/pag02.html" target="iframe">Segunda Página</a></li>
+        <li><a href="paginas-extras/pag03.html" target="iframe">Terceira Página</a></li>
+    </ul>
+
+
+    <iframe id="tela" name="iframe" srcdoc="<h1> Escolha uma das opções acima</h1>" frameborder="1">
+
+        <p>Infelizmente seu navegador não é compatível</p>
+    </iframe>
+
+    
+</body>
+</html>
