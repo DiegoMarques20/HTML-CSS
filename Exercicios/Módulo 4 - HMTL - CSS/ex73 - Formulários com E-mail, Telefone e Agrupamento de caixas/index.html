@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <ul>
+        <li>Para solicitarmos um e-mail, usamos o <mark>input email</mark>. Inserimos o <mark>autocomplete="email"</mark> para que a caixa de preenchimento não deixe o usuário preencher um e-mail sem o @.</li>
+        <p></p>
+        <li>Para informações de telefone, usamos o <mark>input tel</mark>, e para configurarmos que o usuário digite apenas números e em quantidade específica, utilizamos <mark>pattern="^\(\d{2}\)\d{4,5}-\d{4}$"</mark>. Depois pesquisar mais sobre <mark>RegEx em HTML</mark>.</li>
+        <p></p>
+        <li>Para agruparmos o formulário, usamos a tag <mark>fieldset</mark>, com isso os dados são agrupados dentro de um formato quadrado. Para darmos nome para esse agrupamento, usamos a tag <mark>legend</mark>.</li>
+    </ul>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="iname" id="iname" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="iemail" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itelefone">Telefone</label>
+                <input type="tel" name="itelefone" id="itelefone" required autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx">
+            </p>
+        </fieldset>
+       
+
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+
+
+    </form>
+    
+</body>
+</html>
