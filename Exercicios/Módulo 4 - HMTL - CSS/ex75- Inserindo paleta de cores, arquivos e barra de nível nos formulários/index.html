@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+
+    <h1>Exemplo de Formulário</h1>
+
+    <ul type="square">
+        <li>Para abrirmos um seletor de cores, utilizamos o <mark>input color.</mark>Se quizermos passar uma cor em específico utilizamos o <mark>value=""</mark> e inserimos o código da cor. </li>
+        <p></p>
+        <li>Para criarmos uma barra de nível, como no exemplo abaixo, utilizamos o <mark>input range</mark>, para personalizarmos podemos inserir a numeração máxima e mínima, utilizando max e min.</li>
+        <p></p>
+        <li>Para envio de arquivos, utilizamos o <mark>input file</mark>, sempre que utilizamos esse input, o method precisa ser <mark>post.</mark></li>
+    </ul>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        
+        <label for="icor">Cor:</label>
+        <input type="color" name="icor" id="icor" value="#00ff00">
+
+        <p><label for="inivel">Nível de Satisfação</label>
+            <input type="range" name="inivel" id="inivel" max="10" min="0">
+        
+        </p>
+
+        <p>
+            <label for="ifoto">Foto de Perfil</label> <br>
+            <input type="file" name="ifoto" id="ifoto">
+        </p>
+
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+
+
+    </form>
+    
+</body>
+</html>
