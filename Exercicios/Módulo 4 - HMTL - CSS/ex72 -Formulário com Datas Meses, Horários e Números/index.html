@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <h1>Teste de Formulário</h1>
+
+    <ul type="square">
+        <li>Dentro de um formulário, se desejarmos solicitar apenas números, usamos o <mark>input number</mark>, pois ele permite que o usuário digite apenas números. Para padronizarmos a quantidade mínima e máxima de números digitados, repassamos dentro do input <mark>min="0" max="10"</mark></li>
+        <p></p>
+        <li>Se quizermos números padronizados, como notas que podem ter valores 5,5, 9,6 inserimos um <mark>step="0.1"</mark></li>
+        <p></p>
+        <li>Para datas, podemos utilizar o <mark>input month</mark> ou <mark>input date</mark>  </li>
+        <p></p>
+        <li>Para hora, utilizamos o <mark>input time</mark>.</li>
+    </ul>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="inome" id="inome" required placeholder="Digite o seu nome" autocomplete="name" size="15">
+        </p>
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="imedia" required id="imedia" min="0" max="10" placeholder="De 0 a 10" step="0.1">
+
+        </p>
+        <p>
+            <label for="imes">Período Letivo</label>
+            <input type="month" name="imes" required id="imes" value="2022-10">
+
+        </p>
+        <p>
+            <label for="iprova">Dia da Prova</label>
+            <input type="date" required name="iprova" id="iprova">
+        </p>
+
+        <p>
+            <label for="ihora">Horário</label>
+            <input type="time" name="ihora" id="ihora" required>
+        </p>
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+       
+
+
+    </form>
+    
+</body>
+</html>
