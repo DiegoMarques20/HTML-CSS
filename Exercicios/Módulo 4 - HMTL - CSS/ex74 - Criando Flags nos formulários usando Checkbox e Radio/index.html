@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formmmlário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+
+    <ul type="square">
+        <li>Para criarmos uma modalidade de flag, usamos o <mark>input checkbox</mark>, conforme nesse exemplo. <strong>input type="checkbox" name="esfut" id="esfut"> Futebol</strong>.</li>
+        <p></p>
+         <li>Lembrando que devemos sempre colocar dentro de uma Label para usuário que utilizam o celular.</li>
+         <p></p>
+         <li>Para deixaramos  tag em formato de bolinhas, utilizamos o <mark>input radio</mark>, papra esse caso o nome das alternativas precisa ser igual, para na hora de selecionar o usuário conseguir desflegar.Normalmente usado para escolha de apenas uma opção.</li>
+    </ul>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="esfut"> <label for="esfut">Futebol</label> <br>
+            <input type="checkbox" name="esnat" id="esnat"> <label for="esnat">Natação</label> <br>
+            <input type="checkbox" name="esbas" id="esbas"> <label for="esbas">Basquete</label> <br>
+            <input type="checkbox" name="esvol" id="esvol"> <label for="esvol">Vôlei</label> <br>
+            <input type="checkbox" name="esten" id="esten"> <label for="esten">Tênis</label> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" value="M" id="imasculino"> <label for="imasculino">Masculino</label>
+            <input type="radio" name="sexo" value="F" id="ifeminino"> <label for="ifeminino">Feminino</label>
+        </fieldset>
+
+        <p><input type="submit" value="Enviar"><input type="reset" value="Limpar"></p>
+
+    </form>
+    
+</body>
+</html>
