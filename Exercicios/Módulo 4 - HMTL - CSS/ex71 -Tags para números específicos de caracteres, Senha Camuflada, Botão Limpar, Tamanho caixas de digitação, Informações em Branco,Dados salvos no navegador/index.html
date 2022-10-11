@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando caixas de texto e de senha</title>
+</head>
+<body>
+    <h1>Criando caixas de texto e de senha</h1>
+
+    <ul type="square">
+        <li>Para criamos uma caixa de senha, onde os números digitados pelo usuário não aparecem, utilizamos o <mark>input type="password"</mark>, e identificamos o nome para vincular ao texto senha, por exemplo. </li>
+        <p></p>
+        <li>Para criarmos um botão de limpar os dados escritos pelo usuário, utilizamos o <mark>input type="reset" value="Limpar"</mark> </li>
+        <p></p>
+        <li>Quando criamos um formulário, precisamos que o usuário digite algo para ele enviar, evitando que ele envie informações em branco, para esses casos, inserimos dentro da tag input a palavra <mark>required</mark>, com isso caso o usuário deixe algum campo em branco, ele vai aparecer uma mensagem informando para digitar as informações antes do envio. </li>
+        <p></p>
+        <li>Podemos especificar também a quantidade mínima e máxima de caracteres que o usuário precisa digitar, neste caso usamos dentro da tag input <mark>minlength="5"</mark> e <mark>maxlength="15"</mark>, neste exemplo o usuário precisa de no mínimo 5 caracteres digitados e no máximo para ser validado.</li>
+        <p></p>
+        <li>Para organizarmos o tamanho da caixa de digitação, usamos a tag <mark>size</mark> dentro do input, neste exemplo estamos utilizando size="10".</li>
+        <p></p>
+        <li>Para deixarmos um texto discreto dento da caixa de digitação, usamos a tag <mark>placeholder</mark>, neste exemplo utilizamos <mark>placeholder="nome de usuário"</mark></li>
+        <p></p>
+        <li>Podemos usar o <mark>autocomplete</mark> para deixar salvo no navegador os dados digitados pelo usuário, neste exemplo dentro do form <mark>autocomplete="on"</mark>  e dentro do input inserimos <mark>autocomplete="username",</mark> Username significa usuário, temos outras possibilidade como <strong>autocomplete="current-password"</strong>, salvaria o senha do usuário.</li>
+    </ul>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="iusuario">Usuário: <input type="text" required minlength="5" placeholder="nome de usuário" size="10" maxlength="15" autocomplete="username" name="iusuario" id="iusuario"></label>
+        </p>
+
+        <p><label for="isenha"></label>Senha: <input type="password" minlength="6" size="10" maxlength="15" autocomplete="current-password" required name="isenha" id="isenha"></p>
+
+        <p><input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+
+    </form>
+    
+</body>
+</html>

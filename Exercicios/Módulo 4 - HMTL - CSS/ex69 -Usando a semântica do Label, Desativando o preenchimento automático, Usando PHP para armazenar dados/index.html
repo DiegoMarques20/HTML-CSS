@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehorando os Formulários</title>
+
+    <style>
+        * {
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Melhorando os Formulários</h1>
+
+    <ul type="square">
+        <li>Normalmente o preenchimento de formulário é auto completado, com nomes que já utilizamos outras vezes no navegador, para desativarmos essa opção inserimos dentro da tag form o <mark>autocomplete="off"</mark> </li>
+        <p></p>
+        <li>Para enviarmos as informações prrenchidas para armazenamendo, precisamos utilizar uma linguagem de programação e usamos o action dentro da tag form, como neste exemplo que estamos simulando o uso da linguagem PHP <mark>form action="cadastro.php"</mark>.</li>
+        <p></p>
+        <li><mark>Utilizando o Label:</mark> Devemos sempre utilizar o label, pois ele faz ligação entre o componente nome e a caixa onde o usuário vai digitar, pois para os mecanismos de busca é extremamente importante essa ligação entre o texto e a caixa de digitação, outro ponto é que para usuários que utilizam o celular e precisam selecionar com o dedo um campo para digitar, o label melhora o alçance do click.  </li>
+        <p></p>
+        <li>Para fazer essa ligação informada acima, utilizamos a tag Label no nome da caixa utilizada, nesse nosso exemplo usariamos em nome e sobrenome e depois de aplicar a tag, passariamos dentro do for o nome de <strong>id (JavaScrip)</strong> ou <strong>name (PHP)</strong>, para cada liguagem de programação um ou outro é mais importante, conforme parênteses.         
+        </li>
+    </ul>
+    <img src="imagens/exemplo.PNG" width="600" height="200" alt="Imagem Exmplo Código">
+
+
+    <form action="cadastro.php" autocomplete="off">
+
+        <p><label for="inome">Nome</label> <input type="text" name="nome" id="inome"></p>
+        
+        <p><label for="isobrenome">Sobrenome</label> <input type="text" name="sobrenome"
+             id="isobrenome"></p>
+
+        <p><input type="submit" value="Enviar"></p>
+
+    </form>
+    
+</body>
+</html>

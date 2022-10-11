@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilizando Get e Post</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Utilizando Get e Post</h1>
+
+    <ul type="square">
+
+        <li>Quando criamos um formulário de maneira simples, os dados digitados pelo usuário aparcem na url da próxima página.</li>
+        <p></p>
+        <li>Quando esses dados utilizamos pelo usuário <strong>não</strong> forem dados sensíveis, utilizamos o metódo Get, dentro da tag Form inserimos <mark>method="get" </mark></li>
+        <p></p>
+        <li>Quando tivermos que utilizar dados sensíveis do usuário, dados com mais de 3000 bytes (3000 letras), envio de arquivos ai neste caso utilizamos o <mark>Post , method="post"</mark>, dentro da tag form.</li>
+    </ul>
+
+    <form action="cadastro.php" method="post"  autocomplete="off">
+        <p><label for="inome">Nome: <input type="text" name="nome" id="inome"></label></p>
+        <p><label for="isobrenome">Sobrenome: <input type="text" name="sobrenome" id="isobrenome"></label></p>
+        <p><input type="submit" value="Enviar"></p>
+
+    </form>
+        
+
+
+    
+</body> 
+</html>
