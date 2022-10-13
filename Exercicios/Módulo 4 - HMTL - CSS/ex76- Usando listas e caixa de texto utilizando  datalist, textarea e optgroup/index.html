@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+
+    <ul type="square">
+        <li> Para selecionarmos uma lista em forma de estados por exemplo, utilizamos o <mark>select</mark>, criamos um label e passamos o mesmo name ou id, e dentro do select criamos categorias utilizando o <mark>option</mark>, que são as opções selecionadas pelo usuário. Além disso podemos criar sub grupos, como exemplo de seletories de estados, os subgrupo de região sudeste, nordeste, sul e etc. Para isso envelopamos o option utilizando o <mark>optgroup</mark> e dentro do optgroup informamos a label com o nome desejado para destacar o subgrupo, como no exemplo abaixo. </li>
+        <p></p>
+        <li>Para deixarmos uma msg dentro do seletor, como escolha seu estado ou algo similar, usamos o <mark>option value=""> --Escolha Seu Estado-- option</mark>.</li>
+        <p></p>
+        <li>Para Criarmos uma lista similar, porém onde o usuário pode digitar para encontrar sua opção, utilizamos o input text e label normalmente e criamos uma tag <mark>datalist </mark> e informamos um nome de id e dentro dela inserimos <mark>option</mark> que são as opções disponiveis, com isso ativamos dentro da tag input text <mark>list</mark> e passamos o nome da lista criada.</li>
+        <p></p>
+        <li>Para criamos uma caixa de texto, utilizamos a tag <mark>textarea</mark> e dentro dele passamos o nome da label como de costume e a quantidade de números da largura e altura da caixa, como padrão ele vem com cols=30  e rows=10. Para esse metódo devemos utilizar <mark>method="post"</mark>.</li>
+    </ul>
+
+    <p>
+        <label for="iest">Estado</label>
+        <select name="Estado" id="iest">
+
+            <option value="">--Escolha seu Estado--</option>
+            <optgroup label="Região Sudeste">
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+                <option value="ES">Espírito Santo</option>
+            </optgroup>
+
+            <optgroup label="Região Nordeste">
+                <option value="BA">Bahia</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="PE">Pernanbuco</option>
+            </optgroup>
+
+        </select>
+
+        <p>
+            <label for="iprofissao">Profissão:</label>
+            <input type="text" name="iprofissao" id="iprofissao" list="lisprof">
+
+            <datalist id="lisprof">
+                <option>Administrador</option>
+                <option>Desenvolvedor</option>
+                <option >Programador</option>
+                <option >Médico</option>
+                <option >Dentista</option>
+                <option >Outros</option>
+            </datalist>
+            
+            <p>
+
+                <label for="imsg">Mensagem:</label> <br>
+                <textarea name="imsg" id="imsg" cols="35" rows="10"></textarea>
+            </p>
+
+        </p>
+        
+    </p>
+
+    <form action="cadastro.php" autocomplete="on" method="post"> 
+
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+
+
+    </form>
+
+    <h2>Exemplo 1</h2>
+
+    <img src="exemplo-utilizando-optgroup.PNG" width="400" height="300" alt="Exemplo de código utilizando optgroup">
+
+    <h2>Exemplo 2</h2>
+
+    <img src="exemplo-utilizando-textarea-datalist.PNG" width="400" height="300" alt="Exemplo Usando textarea e datalist">
+
+    
+</body>
+</html>
