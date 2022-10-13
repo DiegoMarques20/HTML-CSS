@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        mark#personalizado {
+
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulários com  JavaScript</h1>
+
+    <ul type="square">
+        <li>Para somarmos dois valores digitados por um usuário e que esse resultado apareça na tela, precisamos usar JavaScrip, o código usado nesse exemplo é o <mark>oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)" </mark>. Onde criamos uma tag usando <mark>output</mark> para dar o nome e depois outra dentro do input que passamos o código, que mostra que estamos somando dois valores do nome isoma informado no output.</li>
+        <p></p>
+        <li>Para usar outra modalidade do JavaScript, como o range e utilizamos barra de nível e a númeração aparecer, usamos o output para informar o id ou name, e utilizamos o código <mark>oninput="iinum.innerHTML= Number(inum.value)</mark>.</li>
+        <p></p>
+        <li>Para usarmos uma função de mostrar uma idade de uma pessoa de acordo com seu ano de nascimento, utilizamos uma função e damos uma nome para ela, a função do exemplo 3, mostra como é feito o cálculo: <br>
+                      <mark id="personalizado">
+                          script <br> 
+                                      function calcIdade() { <br>
+                                          let atual = new Date().getFullYear()<br>
+                                          iidade.innerHTML = Number(atual) - Number(iano.value)<br>
+                                      }<br>
+                                  script<br>
+                      </mark>
+    
+    </li>
+    </ul>
+
+
+
+    <form action="cadastro.php" autocomplete="on" method="get">
+
+        <p>
+            <label for="in1">Número 1:</label>
+            <input type="number" name="in1" id="in1" required min="0" max="50" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)"> 
+        </p>
+
+        <p>
+            <label for="in2">Número 2</label>
+            <input type="number" name="in2" id="in2" required min="0" max="50" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <p>
+            <label for="isoma">Soma:</label>
+            <output name="isoma" id="isoma">0</output>
+        </p>
+
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+
+        <p>
+            <label for="inum">Barra de Nível:</label>
+            <input type="range" name="inum" id="uinum" min="0" max="10" value="5" oninput="iinum.innerHTML= Number(inum.value)">
+
+            <output id="iinum">5</output>
+        </p>
+
+        <p>
+            <label for="iano">Em qual ano você nasceu?</label>
+            <input type="number" name="inas" id="iano" min="1900" max="2015" oninput="calcIdade()">
+        </p>
+
+        <p><label for="iidade">Neste ano você completa:</label>
+            <output id="iidade">0</output>
+        </p>
+
+        <script>
+            function calcIdade() {
+                
+                let atual = new Date().getFullYear()
+                iidade.innerHTML = Number(atual) - Number(iano.value)
+            }
+        </script>
+
+    </form>
+
+    <h2>Exemplo Output com JavaScrit</h2>
+
+    <img src="exemplo-output.PNG" width="700" height="400" alt="Exemplo utilizando output com JavaScript">
+
+    <h2>Exemplo Output barra de nível com JavaScrit</h2>
+
+    <img src="exemplo-output2.PNG"  alt="Exemplo barra de nível comJavaScript">
+
+    <h2>Exemplo Cálculo de idade a partir do ano de Nascimento com JavaScrit</h2>
+
+    <img src="exemplo-output3.PNG" alt="Exemplo Cálculo de idade a partir do ano de Nascimento com JavaScrit">
+    
+</body>
+</html>
