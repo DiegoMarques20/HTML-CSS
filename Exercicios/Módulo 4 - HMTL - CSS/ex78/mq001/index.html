@@ -28,11 +28,34 @@
         <article>
             <h2>Aprendendo Media Queries</h2> <br>
 
-            <p>Para realizarmos uma Media Queries, que são basicamente as configurações diferentes de um site e de uma versão impressa. Neste caso criamos 2 estilos de CSS um para parte visual do site, o que já fazamos normalmente e outro para parte de impressão.</p><br>
-            <p>No Exemplo desse site, podemos verificar que quando simulamos uma impressão o formato está diferente a visualização do site, isso porque criamos estilos diferentes, segue abaixo o exemplo que criamos para tela e para versão impressa. </p><br>
-            <p>Para telas usamos o <mark><code>media="screen"</code></mark> e para impressão usamos o  <mark><code>media="print"</code></mark> dentro do estilo CSS. </p> <br>
+            <ul>
+                <li>
+                    <p>Para realizarmos uma Media Queries, que são basicamente as configurações diferentes de um site e de uma versão impressa. Neste caso criamos 2 estilos de CSS um para parte visual do site, o que já fazamos normalmente e outro para parte de impressão.</p><br>
+                </li>
+                <li>
+                    <p>No Exemplo desse site, podemos verificar que quando simulamos uma impressão o formato está diferente a visualização do site, isso porque criamos estilos diferentes, segue abaixo o exemplo que criamos para tela e para versão impressa. </p><br>
+                </li>
+                <li>
+                    <p>Para telas usamos o <mark><code>media="screen"</code></mark> e para impressão usamos o  <mark><code>media="print"</code></mark> dentro do estilo CSS. </p> <br>
+                </li>
+            </ul>
 
             <img src="exemplo-codigo.PNG" alt="">
+
+            <h2>Múltiplas Media Queries</h2> <br>
+
+            <ul>
+                <li>No exemplo abaixo, estamos definindo 3 media queries, uma com <mark>all</mark>, que significa todas as configurações gerais, outra utilizando o <mark>portrait</mark> (retrato, quando o celular ou dispositivo está em pé)e o <mark>landscape</mark> (paisagem, quando o celular ou dispositivo está deitado)  </li>
+                <br>
+                <li>No caso de utilizarmos o modo portrait (retrato) e landscape (paisagem) a configuração precisa ser informada entre parênteses e com a informação conforme exemplo abaixo:</li>
+                <br>
+                <li>    <mark>link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation: portrait)"></mark> <br>
+                    <br>
+
+                    <mark>link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape"></mark> </li><br>
+
+                    <img src="exemplo-codigo2.PNG" alt="Exemplo código portrait e landscape">
+            </ul>
 
 
         </article>
