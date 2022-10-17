@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* Typical Device Breakpoints São as resoluções padrões de cada dispositivo para termos base para atuarmos com media queries e responsividade.
+ (Devemos pesquisar sempre no dia atual, pois essas configurações mudam de tempos em tempos, devido aos novos dispositivos que surgem ao longo dos anos.
+
+Pequenas Telas: até 600px
+Celular: de 600px até 768
+Tablet: 768px até 992px
+Desktop: 992px até 1200 px
+Grandes telas: Acima de 1200px
+*/
+
+@media print {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    body {
+        background-image: url(../);
+    }
+
+}
+
+@media screen and (min-width:992px) and (max-width: 1200px) {
+    
+}
+
+
+@media screen and (min-width:1200px) {
+    
+}
