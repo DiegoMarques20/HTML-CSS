@@ -2,6 +2,7 @@
 
 div.cabecalho {
     text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.076);
 }
 
 p.ppp  {
