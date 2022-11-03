@@ -2,7 +2,9 @@
 
 div.cabecalho {
     text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.076);
+    border: 1px solid rgba(0, 0, 0, 0.179);
+    padding:10px;
+
 }
 
 p.ppp  {
@@ -23,8 +25,8 @@ div > a {
 
 div.intensa {
     text-align: center;
-    margin: 20px;
-    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.179);
+    padding:10px;
 }
 
 span {
@@ -34,10 +36,14 @@ span {
 div.autor {
 
     text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.179);
+    padding:10px;
 }
 
 div.artificial {
 
     text-align: center;
     padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.179);
+    padding:10px;
 }
