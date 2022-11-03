@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+div.cabecalho {
+    text-align: center;
+}
+
+p.ppp  {
+
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+div > a {
+
+    text-decoration: none;
+    background-color: rgba(0, 128, 0, 0.72);
+    color: white;
+    padding: 7px;
+    border-radius: 20px;
+
+}
+
+div.intensa {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+span {
+    font-weight: bold;
+}
+
+div.autor {
+
+    text-align: center;
+}
+
+div.artificial {
+
+    text-align: center;
+}
