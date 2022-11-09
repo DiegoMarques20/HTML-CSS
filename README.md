@@ -6,6 +6,8 @@
 <ol>
 <li><a href="https://diegomarques20.github.io/html-css/Exercicios/projeto-curiosidades-de-belo-horizonte/"target="_blank">  Curiosidades de Belo Horizonte</a></li>
 
+<li><a href="https://diegomarques20.github.io/projeto-site-padaria/"target="_blank">  Projeto Site Padaria</a></li> 
+
 <li><a href="https://diegomarques20.github.io/projeto-redes-sociais/"target="_blank">  Projeto Redes Sociais</a></li>
 
 <li><a href="https://diegomarques20.github.io/projeto-formulario/"target="_blank">  Projeto Formulário e coleta de Dados</a></li>
